@@ -2,7 +2,8 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2d2a2a;
+  --accent: #9caf88;
 }
 
 @theme inline {
@@ -12,15 +13,97 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (max-width: 640px) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #444040;
+    --foreground: #ffffff; 
   }
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.header, .footer {
+  background: var(--accent);
+  color: var(--background);
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-accent {
+  background: var(--background);
+  color: var(--foreground);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+nav > * {
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.accent-container {
+  background: var(--accent);
+  color: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 80%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--background);
+  border-radius: 2px;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+footer { 
+  margin-top: auto;
+  /* existing styles */
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.text-block {
+  margin-bottom: 1rem;
+
+  h3 {
+    font-weight: bold;
+    margin-bottom: .5rem;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
 }

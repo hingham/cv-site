@@ -1,0 +1,40 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #9caf88; /* muted sage green */
+  text-decoration: none;
+}
+
+.header, .footer {
+  background: #1a1a1a;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-accent {
+  background: #9caf88;
+  color: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #222;
+}
