@@ -8,25 +8,25 @@ export default function Work() {
         <li>
           <TextBlock
             title="Qualtrics "
-            body=""
+            bodyText=""
           />
         </li>
         <li>
           <TextBlock
             title="Slalom"
-            body=""
+            bodyText=""
           />
         </li>
         <li>
           <TextBlock
             title="Code Fellows"
-            body=""
+            bodyText=""
           />
         </li>
         <li>
           <TextBlock
             title="Portland Public Schools"
-            body=""
+            bodyText=""
           />
         </li>
       </ul>
@@ -36,19 +36,19 @@ export default function Work() {
         <li>
           <TextBlock
             title="Code Fellows | FullStack JavaScript | 2019"
-            body=""
+            bodyText=""
           />
         </li>
         <li>
           <TextBlock
             title="Lewis & Clark Graduate School of Education | 2016"
-            body=""
+            bodyText=""
           />
         </li>
         <li>
           <TextBlock
             title="Western Washington University | 2013"
-            body=""
+            bodyText=""
           />
         </li>
       </ul>
