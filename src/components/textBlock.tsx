@@ -2,7 +2,7 @@ import React from 'react';
 
 type TextBlockProps = {
     title: string;
-    bodyText: string;
+    bodyText: string | React.ReactNode;
 };
 
 const TextBlock: React.FC<TextBlockProps> = ({ title, bodyText }) => (
