@@ -1,57 +1,40 @@
-import TextBlock from "@/components/textBlock";
+import { careerHighlights } from "@/data/home-data"
 
-export default function Work() {
+function ContentBulletBlock({ title, bodyText, subTitle = "" }: { title: string; bodyText: Record<string, string>, subTitle?: string }) {
+  const bulletedList = Object.entries(bodyText).map(([key, value]) => (
+    <li key={key}>
+      <div className="bullet-item">{value}</div>
+    </li>
+  ));
+  return (
+    <div className="text-block">
+      <h3>{title}</h3>
+      {subTitle.length > 0 ? <h4 style={{ marginBottom: "1em" }}>{subTitle}</h4> : null}
+      <ul>
+        {bulletedList}
+      </ul>
+    </div>
+  );
+}
+
+export default function Home() {
   return (
     <div className="main-accent">
-      <h1>Work History</h1>
-      <ul>
-        <li>
-          <TextBlock
-            title="Qualtrics "
-            bodyText=""
-          />
-        </li>
-        <li>
-          <TextBlock
-            title="Slalom"
-            bodyText=""
-          />
-        </li>
-        <li>
-          <TextBlock
-            title="Code Fellows"
-            bodyText=""
-          />
-        </li>
-        <li>
-          <TextBlock
-            title="Portland Public Schools"
-            bodyText=""
-          />
-        </li>
-      </ul>
-
-      <h1>Education</h1>
-      <ul>
-        <li>
-          <TextBlock
-            title="Code Fellows | FullStack JavaScript | 2019"
-            bodyText=""
-          />
-        </li>
-        <li>
-          <TextBlock
-            title="Lewis & Clark Graduate School of Education | 2016"
-            bodyText=""
-          />
-        </li>
-        <li>
-          <TextBlock
-            title="Western Washington University | 2013"
-            bodyText=""
-          />
-        </li>
-      </ul>
+      <div>
+        <h2>Work History:</h2>
+        <ul>
+          <li>
+            {Object.entries(careerHighlights).map(([key, value]) => (
+              <ContentBulletBlock
+                key={key}
+                title={value.title}
+                bodyText={value.bullets}
+                subTitle={value.subTitle}
+              />
+            ))}
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
