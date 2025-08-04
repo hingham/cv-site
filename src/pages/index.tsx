@@ -37,7 +37,7 @@ export default function Home() {
           <>
             Former mathematics educator turned software engineer with 4 years delivering full‑stack
             solutions in React, TypeScript, Node.js, and AWS. Recognized for translating complex problems
-            into elegant code, mentoring junior developers, and producing clear documentation. Following a
+            into elegant code, mentoring junior developers, fixing baffling bugs, and pushing for and producing clear documentation. Following a
             planned family sabbatical (2023–2025) during which I continued freelancing and open‑source
             contributions, I’m ready to re‑enter the workforce full‑time. Find my{" "}
             <a
