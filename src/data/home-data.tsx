@@ -12,11 +12,12 @@ export const profileData = {
     },
     education: {
         title: "Education & Certifications",
-        subTitle: "Bachelor of Arts in Mathematics, Western Washington University (2013).",
+        subTitle: "",
         bullets: {
-            1: "Code Fellows Software Development Bootcamp (2019) - Full Stack JavaScript, React, Node.js.",
-            2: "AWS Certified Cloud Practitioner (2020), AWS Certified Solutions Architect – Associate (2020).",
-            3: "Ongoing professional development through online courses and workshops in advanced TypeScript, cloud architecture, and team leadership."
+            1: "Bachelor of Arts in Mathematics, Western Washington University (2013).",
+            2: "Code Fellows Software Development Bootcamp (2019) - Full Stack JavaScript, React, Node.js.",
+            3: "AWS Certified Cloud Practitioner (2020), AWS Certified Solutions Architect – Associate (2020).",
+            4: "Ongoing professional development through online courses and workshops in advanced TypeScript, cloud architecture, and team leadership."
         }
     }
 }
@@ -24,9 +25,9 @@ export const profileData = {
 export const careerHighlights = {
     qualtrics: {
         title: "Qualtrics — Full‑Stack Engineer · 2021 – 2023",
-     subTitle: "Built scalable analytics and data infrastructure, led onboarding initiatives, and won company-wide hackathon for cloud architecture innovation.",
+     subTitle: "Built scalable analytics and data infrastructure, led onboarding initiatives, and won org-wide hackathon for cloud architecture innovation.",
         bullets: {
-            1: "Enhanced analytics engine processing 1 M+ survey responses; reduced data processing times for open response text variable data by 60% and removed duplicate stored data to reduce datastorage by upwards of 50% per open text survey.",
+            1: "Enhanced ETL processing times; reduced data processing times for open response text variables by 60% and reduced redundant data storage cutting storage by up to 90% for some surveys.",
             2: "Made extensive onboarding guide contributions and system architecture diagrams adopted across our teams.",
             3: "Mentored 2 interns and 1 new hire.",
             4: "Winner of the 2022 IQ Organization Hackathon for a solo project demonstrating significant cost savings by re-architecting a legacy data pipeline to use serverless AWS products. Delivered working proof-of-concept with code demos, cost analysis, and architecture diagrams that sparked team conversations about future architecture planning."
@@ -36,20 +37,29 @@ export const careerHighlights = {
         title: "Slalom Build — Senior Software Engineer · Seattle, WA · 2019 – 2021",
      subTitle: "Led backend development on high-throughput serverless systems, contributed to DevOps and documentation excellence, and drove impact through social good engineering.",
         bullets: {
-            1: "Championed documentation, diagrams, and test coverage. Took great joy in bug hunting intermittent integration test failures.",
-            2: "Contributing engineer on a large team building micro-service project leveraging AWS serverless products to process high input data streams. Worked extensively on team that interfaced with food delivery API's to transform data to be ingested by various food delivery services.",
-            3: "Participated in women's study group to earn two certificates in AWS development - AWS Cloud Practioner and AWS Architect (2020)",
-            4: "\"Hack for Social Good\" runner-up for a project developed with the Stanford Immigration Policy Lab to support large-scale survey dissemination to immigrant populations via Twilio, WhatsApp, and Google Apps Script. Led engineering as the sole developer in collaboration with a designer, and produced extensive technical documentation to enable nonprofit reuse and adoption."
+            1: "Contributing engineer on a large team building micro-service project leveraging AWS serverless products to process high input data streams. Worked extensively on team that interfaced with food delivery API's to transform data to be ingested by various food delivery services.",
+            2: "Championed documentation, diagrams, and test coverage. Took great joy in bug hunting intermittent integration test failures.",
+            3: "Participated in women's study group and earned two certificates in AWS development - AWS Cloud Practioner and AWS Architect (2020)",
+            4: "\"Hack for Social Good\" first runner-up for a project developed with the Stanford Immigration Policy Lab to support large-scale survey dissemination to immigrant populations via Twilio, WhatsApp, and Google Apps Script. Led engineering as the sole developer in collaboration with a designer, and produced extensive technical documentation to enable nonprofit reuse and adoption."
+        }
+    }, 
+    codeFellows: {
+        title: "Code Fellows — Teaching Assistant & Teach in Training · Seattle, WA · 2018 – 2019",
+     subTitle: "",
+        bullets: {
+            1: "Assisted coding bootcamp students: offered feedback, graded course work, debugged coding projects, and assisted with mock interviews, .",
+            2: "Trained as a full-time instructor for the entry level bootcamp course focusing on fundamentals of building simple fullstack apps with JavaScript and Node.js.",
         }
     },
     sabbatical: {
         title: "Planned Caregiving Sabbatical (2023–2025)",
         subTitle: "Took a step back to raise two young children while continuing to hone my craft:",
         bullets: {
-            1: "Shipped a JAMstack marketing site for a small business (Next.js, Netlify CMS, Stripe).",
+            3: "Assisted Stanford Immigration Policy Lab in updating and adding features to WhatsAppSurvey project “Hack for Good",
             2: "Built a modular‑meal‑planning app (React Native, Firebase) now in private beta.",
-            3: "Contributed pull requests and troubleshot Twilio integration for an open‑source “Hack for Good” project originally built in partnership with Stanford Immigration Policy Lab.",
-            4: "Developed DIY skills (drywall, kitchen remodel) and completed a 100‑mile family walking pilgrimage across Tuscany, Italy—reinforcing resilience, planning, and teamwork."
+            1: "Shipped Squarespace site for friends starting new business.",
+            4: "Enrolled in Udemy courses forced on advanced React concepts and AI prompt engineering.",
+            5: "Developed DIY skills (drywall, kitchen remodel) and completed a 100‑mile family walking pilgrimage across Tuscany, Italy—reinforcing resilience, planning, and teamwork."
         }
     },
 }
