@@ -8,8 +8,9 @@ export default function Blog() {
       {blogPosts.map((post, index) => (
         <TextBlock
           key={index}
-          title={post.title}
+          title={`${post.title} — ${post.date}`}
           bodyText={post.body}
+          collapsible={true}
         />
       ))}
     </div >
