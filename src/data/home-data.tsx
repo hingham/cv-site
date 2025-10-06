@@ -39,7 +39,7 @@ export const careerHighlights = {
         bullets: {
             1: "Contributing engineer on a large team building micro-service project leveraging AWS serverless products to process high input data streams. Worked extensively on team that interfaced with food delivery API's to transform data to be ingested by various food delivery services.",
             2: "Championed documentation, diagrams, and test coverage. Took great joy in bug hunting intermittent integration test failures.",
-            3: "Participated in women's study group and earned two certificates in AWS development - AWS Cloud Practioner and AWS Architect (2020)",
+            3: "Participated in women's study group and earned two certificates in AWS development - AWS Cloud Practitioner and AWS Architect (2020)",
             4: "\"Hack for Social Good\" first runner-up for a project developed with the Stanford Immigration Policy Lab to support large-scale survey dissemination to immigrant populations via Twilio, WhatsApp, and Google Apps Script. Led engineering as the sole developer in collaboration with a designer, and produced extensive technical documentation to enable nonprofit reuse and adoption."
         }
     }, 

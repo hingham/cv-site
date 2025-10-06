@@ -6,6 +6,7 @@ export default function MainHeader() {
         <Link href="/">Home</Link>
         <Link href="/projects">Projects</Link>
         <Link href="/work">Work History</Link>
+        <Link href="/blog">Blog</Link>
       </nav>
     </header>
 }
