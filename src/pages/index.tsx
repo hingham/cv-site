@@ -25,10 +25,10 @@ export default function Home() {
     <div className="main-accent">
       <h2>About Me:</h2>
       <Image
-        src="/cv_site_profile.jpg"
+        src="/cv-site-profile.png"
         alt="Profile Picture"
-        width={200}
-        height={200}
+        width={175}
+        height={175}
         className="profile-image"
       />
       <TextBlock
@@ -39,16 +39,24 @@ export default function Home() {
             solutions in React, TypeScript, Node.js, and AWS. Recognized for translating complex problems
             into elegant code, mentoring junior developers, fixing baffling bugs, and pushing for and producing clear documentation. Following a
             planned family sabbatical (2023–2025) during which I continued freelancing and open‑source
-            contributions, I’m ready to re‑enter the workforce full‑time. Find my{" "}
+            contributions, I’m ready to re‑enter the workforce full‑time.
+          </>}
+      />
+      <TextBlock
+        title="Resume:"
+        bodyText={
+          <>
+            View{" "}
             <a
               href="https://docs.google.com/document/d/10jE9WHLiiqeNZRtO5dWSViOHDJcGtnT7csu8kLpuCek/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
-              resume
+              <strong>my resume</strong>
             </a>{" "}
             here.
-          </>}
+          </>
+        }
       />
       <div>
         <h2><Link href="/work">Career Highlights:</Link></h2>
