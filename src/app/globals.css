@@ -20,7 +20,8 @@
   }
 
   .profile-image {
-    max-width: 7rem;
+    width: 100%;
+    /* max-width: 7rem;S */
   }
 }
 
@@ -60,6 +61,15 @@ body {
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .main-accent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
 }
 
 nav > * {
@@ -119,8 +129,8 @@ h3 {
 
 .profile-image {
   float: right;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
+  /* margin-left: 2rem; */
+  /* margin-bottom: 2rem; */
   width: 15rem;
 }
 
@@ -133,4 +143,27 @@ h3 {
 
 a {
   text-decoration: underline;
+}
+
+.project-layout {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 640px) {
+  .project-layout {
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+}
+
+.project-layout div {
+  padding-right: 1em;
+}
+
+.project-image { 
+  width: 100%;
+  max-width: 250px;
+  border: "1px solid #ccc";
 }

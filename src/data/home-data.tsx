@@ -14,10 +14,11 @@ export const profileData = {
         title: "Education & Certifications",
         subTitle: "",
         bullets: {
-            1: "Bachelor of Arts in Mathematics, Western Washington University (2013).",
-            2: "Code Fellows Software Development Bootcamp (2019) - Full Stack JavaScript, React, Node.js.",
-            3: "AWS Certified Cloud Practitioner (2020), AWS Certified Solutions Architect – Associate (2020).",
-            4: "Ongoing professional development through online courses and workshops in advanced TypeScript, cloud architecture, and team leadership."
+            1: "Master of Arts in Teaching, Secondary Mathematics, Lewis & Clark College (2016).",
+            2: "Bachelor of Arts in English, Minor Mathematics, Western Washington University (2013).",
+            3: "Code Fellows Software Development Bootcamp (2019) - Full Stack JavaScript, React, Node.js.",
+            4: "AWS Certified Cloud Practitioner (2020), AWS Certified Solutions Architect – Associate (2020).",
+            5: "Ongoing professional development through online courses and workshops in advanced TypeScript, cloud architecture, and AI tooling."
         }
     }
 }
@@ -27,10 +28,11 @@ export const careerHighlights = {
         title: "Qualtrics — Full‑Stack Engineer · 2021 – 2023",
      subTitle: "Built scalable analytics and data infrastructure, led onboarding initiatives, and won org-wide hackathon for cloud architecture innovation.",
         bullets: {
-            1: "Enhanced ETL processing times; reduced data processing times for open response text variables by 60% and reduced redundant data storage cutting storage by up to 90% for some surveys.",
-            2: "Made extensive onboarding guide contributions and system architecture diagrams adopted across our teams.",
-            3: "Mentored 2 interns and 1 new hire.",
-            4: "Winner of the 2022 IQ Organization Hackathon for a solo project demonstrating significant cost savings by re-architecting a legacy data pipeline to use serverless AWS products. Delivered working proof-of-concept with code demos, cost analysis, and architecture diagrams that sparked team conversations about future architecture planning."
+            1: "Enhanced ETL processing times; reduced data processing times for open response text variables by 60% and reduced redundant data storage cutting storage by up to 90% for some datasets.",
+            2: "Participated in on-call rotation to troubleshoot and resolve production issues, triage bugs, and push code to fix customer-impacting issues.",
+            3: "Made extensive onboarding guide contributions and system architecture diagrams adopted across our teams.",
+            4: "Mentored 2 interns and 1 new hire.",
+            5: "Winner of the 2022 IQ Organization Hackathon for a solo project demonstrating significant cost savings by re-architecting a legacy data pipeline to use serverless AWS products. Delivered working proof-of-concept with code demos, cost analysis, and architecture diagrams that sparked team conversations about future architecture planning."
         }
     },
     slalomBuild: {
@@ -45,9 +47,9 @@ export const careerHighlights = {
     }, 
     codeFellows: {
         title: "Code Fellows — Teaching Assistant & Teach in Training · Seattle, WA · 2018 – 2019",
-     subTitle: "",
+     subTitle: "Mentored and instructed students in full‑stack JavaScript development, debugging, and interview preparation.",
         bullets: {
-            1: "Assisted coding bootcamp students: offered feedback, graded course work, debugged coding projects, and assisted with mock interviews, .",
+            1: "Assisted coding bootcamp students: offered feedback, graded course work, debugged coding projects, and assisted with mock interviews.",
             2: "Trained as a full-time instructor for the entry level bootcamp course focusing on fundamentals of building simple fullstack apps with JavaScript and Node.js.",
         }
     },
@@ -58,8 +60,9 @@ export const careerHighlights = {
             3: "Assisted Stanford Immigration Policy Lab in updating and adding features to WhatsAppSurvey project “Hack for Good",
             2: "Built a modular‑meal‑planning app (React Native, Firebase) now in private beta.",
             1: "Shipped Squarespace site for friends starting new business.",
-            4: "Enrolled in Udemy courses forced on advanced React concepts and AI prompt engineering.",
-            5: "Developed DIY skills (drywall, kitchen remodel) and completed a 100‑mile family walking pilgrimage across Tuscany, Italy—reinforcing resilience, planning, and teamwork."
+            4: "Enrolled in Udemy courses focused on advanced React concepts and AI prompt engineering.",
+            5: "Developed DIY skills (drywall, kitchen remodel)",
+            6: "Planned and completed a 100‑mile walking pilgrimage with spouse and toddler across Tuscany, Italy—reinforcing planning and teamwork."
         }
     },
 }
@@ -70,7 +73,7 @@ export const seekingOpportunities = {
         subTitle: "",
         bullets: {
             1: "Ship high‑impact features in modern TypeScript and cloud environments.",
-            2: "Leverage my mentoring & documentation strengths to raise team velocity.",
+            2: "Leverage my mentoring, documentation, and code quality strengths to raise team velocity.",
             3: "Grow into a Staff‑level engineer who shapes architecture and culture."
         }
     }
