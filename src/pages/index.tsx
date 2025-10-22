@@ -23,7 +23,6 @@ function ContentBulletBlock({ title, bodyText, subTitle = "" }: { title: string;
 export default function Home() {
   return (
     <div className="main-accent">
-      <h2>About Me:</h2>
       <Image
         src="/cv-site-profile.png"
         alt="Profile Picture"
@@ -31,20 +30,22 @@ export default function Home() {
         height={175}
         className="profile-image"
       />
-      <TextBlock
-        title=""
-        bodyText={
-          <>
-            Former mathematics educator turned software engineer with 4 years delivering full‑stack
-            solutions in React, TypeScript, Node.js, and AWS. Recognized for translating complex problems
-            into elegant code, mentoring junior developers, fixing baffling bugs, and pushing for and producing clear documentation. Following a
-            planned family sabbatical (2023–2025) during which I continued freelancing and open‑source
-            contributions, I’m ready to re‑enter the workforce full‑time.
-          </>}
-      />
-      <TextBlock
-        title="Resume:"
-        bodyText={
+      <div className="content-container">
+
+        <h2>About Me:</h2>
+        <TextBlock
+          title=""
+          bodyText={
+            <>
+              Former mathematics educator turned software engineer with 4 years delivering full‑stack
+              solutions in React, TypeScript, Node.js, and AWS. Recognized for translating complex problems
+              into elegant code, mentoring junior developers, fixing baffling bugs, and pushing for and producing clear documentation. Following a
+              planned family sabbatical (2023–2025) during which I continued freelancing and open‑source
+              contributions, I’m ready to re‑enter the workforce full‑time.
+            </>}
+        />
+        <h3>Quick Links:</h3>
+        <p>
           <>
             View{" "}
             <a
@@ -56,47 +57,60 @@ export default function Home() {
             </a>{" "}
             here.
           </>
-        }
-      />
-      <div>
-        <h2><Link href="/work">Career Highlights:</Link></h2>
-        <ul>
-          <li>
-            {Object.entries(careerHighlights).map(([key, value]) => (
-              <ContentBulletBlock
-                key={key}
-                title={value.title}
-                subTitle={value.subTitle}
-              />
-            ))}
-          </li>
-        </ul>
-        <h2>Toolkit & Education</h2>
-        <ul>
-          <li>
-            {Object.entries(profileData).map(([key, value]) => (
-              <ContentBulletBlock
-                key={key}
-                title={value.title}
-                bodyText={value.bullets}
-                subTitle={value.subTitle}
-              />
-            ))}
-          </li>
-        </ul>
-        <h2>What&apos;s Next</h2>
-        <ul>
-          <li>
-            {Object.entries(seekingOpportunities).map(([key, value]) => (
-              <ContentBulletBlock
-                key={key}
-                title={value.title}
-                bodyText={value.bullets}
-                subTitle={value.subTitle}
-              />
-            ))}
-          </li>
-        </ul>
+        </p>
+        <p>
+          <>
+            View{" "}
+            <a
+              href="https://www.linkedin.com/in/hannah-ingham/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <strong>my linkedin</strong>
+            </a>{" "}
+            here.
+          </>
+        </p>
+        <div>
+          <h2><Link href="/work">Career Highlights:</Link></h2>
+          <ul>
+            <li>
+              {Object.entries(careerHighlights).map(([key, value]) => (
+                <ContentBulletBlock
+                  key={key}
+                  title={value.title}
+                  subTitle={value.subTitle}
+                />
+              ))}
+            </li>
+          </ul>
+          <h2>Toolkit & Education</h2>
+          <ul>
+            <li>
+              {Object.entries(profileData).map(([key, value]) => (
+                <ContentBulletBlock
+                  key={key}
+                  title={value.title}
+                  bodyText={value.bullets}
+                  subTitle={value.subTitle}
+                />
+              ))}
+            </li>
+          </ul>
+          <h2>What&apos;s Next</h2>
+          <ul>
+            <li>
+              {Object.entries(seekingOpportunities).map(([key, value]) => (
+                <ContentBulletBlock
+                  key={key}
+                  title={value.title}
+                  bodyText={value.bullets}
+                  subTitle={value.subTitle}
+                />
+              ))}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
